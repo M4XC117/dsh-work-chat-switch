@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "工作 / 聊天",
+    "description": "把侧边栏「新会话」换成「工作｜聊天」：工作走 API Key 会话，聊天走 DeepSeek 账号的免费额度。"
+  }
+}

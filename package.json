@@ -1,0 +1,46 @@
+{
+  "name": "dsh-work-chat-switch",
+  "version": "1.0.1",
+  "description": "ChatGPT-style Chat / Work switch for DeepSeek Harness: Chat embeds the official free web chat in the main column, Work starts an API-key session. · 侧边栏「聊天｜工作」切换：聊天在主区域内嵌官方网页聊天，工作新建 API Key 会话。",
+  "type": "module",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "chat",
+    "webview",
+    "sidebar",
+    "workflow"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-locale"]
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

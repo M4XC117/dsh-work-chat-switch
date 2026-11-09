@@ -1,0 +1,5 @@
+# Inserts this bundle's Host row. The Client half (client.js) draws the switch
+# over the sidebar's shipped New Session button and the embedded Chat panel.
+- insert:
+    - id: work-chat-switch
+      name: 'dsh-work-chat-switch'

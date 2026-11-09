@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Work / Chat",
+    "description": "Replaces the sidebar New Session button with Work and Chat: Work starts an API-key session, Chat starts a free DeepSeek-account session."
+  }
+}
