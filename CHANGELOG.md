@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 — 2026-11-10
+
+- Declare `engines.dsh >= 0.2.2-rc.1` (the version this release was verified on)
+  so a market install can refuse an incompatible harness build.
+- README: install through the Plugins panel first, since the `dsh` CLI is not on
+  every `PATH`; add the verified version, the API-key requirement for Work, and
+  the network/region limit of the embedded page.
+- Drop the staged `0.0.0-stage` placeholder version from the registry.
+
 ## 1.0.1 — 2026-11-10
 
 - Add a frosted transition when switching Chat / Work: the central column is

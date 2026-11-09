@@ -10,13 +10,19 @@ plus an embedded official web chat in the main column.
 
 ## Install
 
+**In the desktop app:** open **Plugins → Add**, paste `dsh-work-chat-switch`,
+and confirm. The bundle inserts one Host row and loads its Client half
+immediately, so the Chat / Work pair appears without a restart.
+
+**From a terminal**, if `dsh` is on your `PATH`:
+
 ```bash
 dsh plugin add dsh-work-chat-switch
 ```
 
-Or install the directory as a bundle (Plugins → Add → local path) from a
-checkout. The bundle inserts one Host row and loads its Client half
-immediately.
+A checkout can also be installed as a local bundle (Plugins → Add → local path).
+No build step and no install-script approval is involved: the published tarball
+is plain JavaScript.
 
 ## How it works
 
@@ -60,8 +66,15 @@ under the buttons.
 
 ## Requirements and limitations
 
+- Verified against DSH desktop **0.2.2-rc.1**; `package.json` declares
+  `engines.dsh >= 0.2.2-rc.1` so a market install can be gated by version.
 - **Desktop app only** for the embedded page: the web build has no lease bridge,
   and the page refuses iframes. Without it the panel shows a message.
+- **Work needs an API Key** (the `deepseek-official` provider). Without one it
+  falls back to the deployment default model and shows a notice under the
+  buttons — the session still opens.
+- The chat page itself must be reachable from your network, and the account must
+  be usable in your region; a blocked or failed load is reported under the panel.
 - The Chat login is per app run (process-lifetime partition), as above.
 - The switch replaces shipped sidebar chrome; a DSH upgrade that renames or
   replaces that button can break the replacement (the fallback keeps the app
