@@ -4,6 +4,15 @@
   "description": "ChatGPT-style Chat / Work switch for DeepSeek Harness: Chat embeds the official free web chat in the main column, Work starts an API-key session. · 侧边栏「聊天｜工作」切换：聊天在主区域内嵌官方网页聊天，工作新建 API Key 会话。",
   "type": "module",
   "license": "MIT",
+  "author": "M4XC117",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4XC117/dsh-work-chat-switch.git"
+  },
+  "homepage": "https://github.com/M4XC117/dsh-work-chat-switch#readme",
+  "bugs": {
+    "url": "https://github.com/M4XC117/dsh-work-chat-switch/issues"
+  },
   "icon": "./icon.svg",
   "keywords": [
     "deepseek-harness",
